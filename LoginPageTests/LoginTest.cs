@@ -12,7 +12,7 @@ namespace LoginPageTests
     {
         Corebd context = new Corebd();
         [TestMethod]
-        public void TestMethod1()
+        public void testlogin_true()
         {
             string Email = "bbo@gmail.com";
             string Password = "MasterGosha";
@@ -21,7 +21,7 @@ namespace LoginPageTests
             Assert.IsTrue(result);
         }
         [TestMethod]
-        public void TestMethod2()
+        public void testlogin_false()
         {
             string Email = "bbwadao@gmail.com";
             string Password = "MasterGosha";

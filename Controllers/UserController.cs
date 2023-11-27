@@ -64,7 +64,14 @@ namespace MaraphonApp.Controllers
             }
 
         }
-
+        /// <summary>
+        /// выполняет авторизацию
+        /// </summary>
+        /// <param name="Email"></param>
+        /// <param name="Password"></param>
+        /// <returns>
+        /// принимает почту и пароль
+        /// </returns>
         public bool Login(string Email, string Password)
         {
           var result = context.entities.users.Where(x => x.user_email == Email && x.user_password == Password).FirstOrDefault();
